@@ -25,6 +25,7 @@ model Timesheet {
   day6 Int
   day7 Int
   total Int
+  daterange String
    status            String?
   author    Employee?    @relation(fields: [authorId], references: [id])
   authorId  Int?
